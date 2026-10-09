@@ -1,0 +1,25 @@
+/*
+Theme Name: Flowbase Cooking
+Theme URI: https://flowbase.co
+Author: Flowbase & Antigravity
+Author URI: https://flowbase.co
+Description: A modern, minimalist cooking and recipe FSE block theme based on the Flowbase Figma template. Features fluid typography, robust block patterns, and a clean, responsive design.
+Requires at least: 6.2
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: flowbase-cooking
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, block-styles, responsive-layout, translation-ready
+*/
+
+/* Minimal CSS - all heavy lifting done by theme.json */
+.wp-site-blocks {
+    overflow-x: hidden;
+}
+
+/* Base utility classes for patterns if absolutely needed, though mostly handled by core blocks */
+.is-style-circular-image img {
+    border-radius: 50%;
+}

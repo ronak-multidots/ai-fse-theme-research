@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Green (Nature)",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#ffffff",
+					"name": "Base"
+				},
+				{
+					"slug": "secondary-base",
+					"color": "#f2f8f2",
+					"name": "Off White"
+				},
+				{
+					"slug": "contrast",
+					"color": "#203020",
+					"name": "Contrast (Dark Gray)"
+				},
+				{
+					"slug": "primary",
+					"color": "#e0f2e0",
+					"name": "Primary (Light Blue)"
+				},
+				{
+					"slug": "accent",
+					"color": "#4caf50",
+					"name": "Accent (Red)"
+				},
+				{
+					"slug": "accent-alt",
+					"color": "#8bc34a",
+					"name": "Accent (Orange)"
+				}
+			]
+		}
+	},
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--base)",
+            "text": "var(--wp--preset--color--contrast)"
+        },
+        "elements": {
+            "button": {
+                "color": {
+                    "background": "var(--wp--preset--color--contrast)",
+                    "text": "var(--wp--preset--color--base)"
+                }
+            }
+        }
+    }
+}

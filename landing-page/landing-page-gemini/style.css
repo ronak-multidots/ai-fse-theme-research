@@ -1,0 +1,180 @@
+/*
+Theme Name: LaslesVPN
+Theme URI: https://example.com/laslesvpn
+Author: Your Name
+Author URI: https://example.com/
+Description: A pixel-perfect, responsive Full Site Editing theme based on the LaslesVPN Figma design.
+Requires at least: 6.2
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: laslesvpn
+Tags: custom-colors, custom-logo, custom-menu, full-site-editing, block-patterns, block-styles, responsive-layout
+*/
+
+/* Custom CSS for specific pixel-perfect tweaks */
+:root {
+	--slider-nav-size: 60px;
+}
+
+/* Custom Checkmark List (Features Section) */
+.is-style-lasles-check-list {
+	list-style: none;
+	padding-left: 0;
+}
+.is-style-lasles-check-list li {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 15px;
+	color: #4F5665;
+}
+.is-style-lasles-check-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="%232FAB73"/><path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Pricing List Checks */
+.is-style-pricing-list {
+	list-style: none;
+	padding-left: 0;
+}
+.is-style-pricing-list li {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 20px;
+	color: #4F5665;
+	font-size: 14px;
+}
+.is-style-pricing-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="%232FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Testimonials Slider (CSS Scroll Snapping) */
+.lasles-testimonials-wrapper {
+	display: flex;
+	gap: 30px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	padding: 20px 0;
+	scrollbar-width: none; /* Firefox */
+}
+.lasles-testimonials-wrapper::-webkit-scrollbar {
+	display: none; /* Chrome/Safari */
+}
+.lasles-testimonial-card {
+	scroll-snap-align: center;
+	width: 400px;
+	max-width: 90vw;
+	flex: 0 0 auto;
+	border: 2px solid #DDDDDD;
+	border-radius: 10px;
+	padding: 30px;
+	background: #FFFFFF;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.lasles-testimonial-card:hover,
+.lasles-testimonial-card.active {
+	border-color: #F53838;
+	box-shadow: 0px 15px 30px rgba(13, 16, 37, 0.08);
+}
+
+@media (max-width: 768px) {
+	.lasles-testimonial-card {
+		min-width: 280px;
+	}
+}
+
+/* Custom Shadows & Borders */
+.has-lasles-shadow {
+	box-shadow: 0px 20px 40px rgba(13, 16, 37, 0.06);
+}
+.has-red-border {
+	border: 2px solid #F53838;
+}
+
+/* Navigation Overrides */
+.wp-block-navigation__responsive-container-open {
+	color: #0B132A !important;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content { color: #4F5665 !important; font-weight: 400 !important; }
+.wp-block-navigation .wp-block-navigation-item__content:hover { color: #0B132A !important; font-weight: 500 !important; }
+
+/* Footer Lists */
+footer .wp-block-list {
+	list-style: none;
+	padding-left: 0;
+}
+footer .wp-block-list li {
+	margin-bottom: 15px;
+}
+footer .wp-block-list a {
+	color: #4F5665;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+footer .wp-block-list a:hover {
+	color: #F53838;
+}
+
+/* Fix button shadows */
+.wp-block-button.has-red-shadow { box-shadow: none !important; }
+.wp-block-button.has-red-shadow .wp-block-button__link { box-shadow: 0px 15px 30px rgba(245, 56, 56, 0.35) !important; }
+
+/* CTA Overlap */
+.lasles-cta-box {
+	position: relative;
+	z-index: 10;
+}
+
+/* Slider Controls */
+.lasles-dot {
+	width: 15px;
+	height: 15px;
+	background: #DDE0E4;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.lasles-dot.active {
+	width: 45px;
+	background: #F53838;
+}
+.lasles-slider-prev, .lasles-slider-next {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.lasles-slider-prev {
+	border: 2px solid #F53838;
+	background: #fff;
+	margin-right: 10px;
+}
+.lasles-slider-next {
+	background: #F53838;
+	box-shadow: 0px 15px 30px rgba(245, 56, 56, 0.35);
+}

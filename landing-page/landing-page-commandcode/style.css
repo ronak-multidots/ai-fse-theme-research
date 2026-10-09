@@ -1,0 +1,109 @@
+/*
+Theme Name: LaslesVPN
+Theme URI: https://example.com/laslesvpn
+Author: Command Code
+Author URI: https://commandcode.ai
+Description: A WordPress Full Site Editing theme replicating the LaslesVPN landing page. Built with theme.json v3 and native Gutenberg blocks.
+Requires at least: 6.6
+Tested up to: 6.7
+Requires PHP: 7.4
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: laslesvpn
+Tags: full-site-editing, block-patterns, one-column, custom-colors, custom-logo
+*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wp-site-blocks {
+	overflow-x: clip;
+}
+
+/* Brand logo wordmark */
+.laslesvpn-logo {
+	margin: 0;
+}
+
+.laslesvpn-logo a {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #0b132a;
+	text-decoration: none;
+}
+
+.laslesvpn-logo a:hover {
+	color: #0b132a;
+}
+
+.laslesvpn-logo strong {
+	font-weight: 700;
+}
+
+.laslesvpn-logo-dot {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #f53838;
+}
+
+/* Pricing checkmarks */
+.laslesvpn-check {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 12px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #2fab73;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/* Testimonial avatars */
+.laslesvpn-avatar img {
+	border-radius: 999px;
+	object-fit: cover;
+}
+
+/* Sponsor logos */
+.laslesvpn-sponsor img {
+	height: 40px;
+	width: auto;
+	object-fit: contain;
+	opacity: 0.85;
+}
+
+/* Card shadow helper */
+.has-card-shadow {
+	box-shadow: 0 12px 40px rgba(13, 16, 37, 0.08);
+}
+
+/* Highlighted pricing card */
+.has-pricing-highlight {
+	border: 2px solid #f53838 !important;
+}
+
+/* Buttons */
+.wp-block-button__link {
+	font-weight: 700;
+}
+
+/* Navigation responsive */
+@media (max-width: 781px) {
+	.wp-block-navigation__responsive-container-open {
+		display: flex;
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "1140px",
+			"wideSize": "1140px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{
+					"slug": "primary",
+					"name": "Primary Red",
+					"color": "#F53838"
+				},
+				{
+					"slug": "primary-soft",
+					"name": "Primary Soft",
+					"color": "#FFECEC"
+				},
+				{
+					"slug": "heading",
+					"name": "Heading Navy",
+					"color": "#0B132A"
+				},
+				{
+					"slug": "body",
+					"name": "Body Gray",
+					"color": "#4F5665"
+				},
+				{
+					"slug": "muted",
+					"name": "Muted Gray",
+					"color": "#AFB5C0"
+				},
+				{
+					"slug": "light",
+					"name": "Light Gray",
+					"color": "#F8F8F8"
+				},
+				{
+					"slug": "border",
+					"name": "Border",
+					"color": "#DDDDDD"
+				},
+				{
+					"slug": "background",
+					"name": "White",
+					"color": "#FFFFFF"
+				},
+				{
+					"slug": "foreground",
+					"name": "Foreground",
+					"color": "#0B132A"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": false,
+			"fontFamilies": [
+				{
+					"slug": "rubik",
+					"name": "Rubik",
+					"fontFamily": "'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"name": "Small",
+					"size": "14px"
+				},
+				{
+					"slug": "medium",
+					"name": "Medium",
+					"size": "16px"
+				},
+				{
+					"slug": "large",
+					"name": "Large",
+					"size": "18px"
+				},
+				{
+					"slug": "x-large",
+					"name": "Extra Large",
+					"size": "20px"
+				},
+				{
+					"slug": "xx-large",
+					"name": "2X Large",
+					"size": "35px"
+				},
+				{
+					"slug": "huge",
+					"name": "Huge",
+					"size": "50px"
+				}
+			]
+		},
+		"spacing": {
+			"units": [ "px", "em", "rem", "%", "vw", "vh" ],
+			"spacingScale": {
+				"steps": 0
+			}
+		},
+		"border": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#FFFFFF",
+			"text": "#4F5665"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|rubik",
+			"fontSize": "16px",
+			"lineHeight": "1.75"
+		},
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "#0B132A"
+				},
+				"typography": {
+					"fontWeight": "500",
+					"lineHeight": "1.25"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "#4F5665"
+				},
+				":hover": {
+					"color": {
+						"text": "#F53838"
+					}
+				}
+			},
+			"button": {
+				"color": {
+					"text": "#FFFFFF",
+					"background": "#F53838"
+				},
+				"border": {
+					"radius": "10px"
+				},
+				"typography": {
+					"fontWeight": "700"
+				},
+				"spacing": {
+					"padding": {
+						"top": "15px",
+						"bottom": "15px",
+						"left": "44px",
+						"right": "44px"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontWeight": "400",
+					"fontSize": "16px"
+				}
+			},
+			"core/button": {
+				"border": {
+					"radius": "10px"
+				}
+			},
+			"core/separator": {
+				"color": {
+					"text": "#EEEEF2"
+				}
+			},
+			"core/group": {
+				"color": {
+					"background": "transparent"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	],
+	"customTemplates": []
+}

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(ls:*)",
+      "Shell(file:*)",
+      "Shell(head:*)",
+      "Shell(xxd:*)",
+      "Shell(rm:*)",
+      "Shell(mkdir:*)",
+      "Shell(unzip:*)",
+      "Shell(for:*)",
+      "Shell(do:*)",
+      "Shell(done:*)",
+      "Shell(strings:*)",
+      "Shell(grep:*)",
+      "Shell(cp:*)",
+      "Shell(cd:*)",
+      "Shell(python3 -c import json,sys; json.load(open('theme.json')); print('OK'))",
+      "Shell(which:*)",
+      "Shell(studio:*)",
+      "Shell(echo:*)",
+      "Shell(curl -s http://localhost:8883/ -o /tmp/laslesvpn_home.html)",
+      "Shell(cd /tmp echo \"=== section headings present? ===\" for s in \"Want anything to be easy\" \"90+\" \"We Provide Many Features\" \"Choose Your Plan\" \"Huge Global Network\" \"Trusted by Thousands\" \"Subscribe Now for Get\" \"LaslesVPN is a private\"; do c=$(grep -c \"$s\" laslesvpn_home.html) echo \"[$c] $s\" done echo \"=== PHP warnings/notices as HTML comments ===\" grep -oE \"(Warning|Notice|Fatal error|Deprecated|Undefined)[^<]*\" laslesvpn_home.html | head -20 || echo \"none\" echo \"=== image srcs ===\" grep -oE 'src=\"[^\"]*(hero|map|avatar|logo)\\.png[^\"]*\"' laslesvpn_home.html | sort -u)",
+      "Shell(cd /tmp echo \"=== avatar references ===\" grep -oE 'avatar-[0-9]\\.png' laslesvpn_home.html | sort | uniq -c echo \"=== testimonial names ===\" for n in \"Viezh Robert\" \"Yessica Christy\" \"Kim Young Jou\"; do echo \"[$(grep -c \"$n\" laslesvpn_home.html)] $n\" done echo \"=== check logo.png / logo wordmark ===\" grep -c \"laslesvpn-logo\" laslesvpn_home.html)",
+      "Shell(agent-browser:*)",
+      "Shell(export:*)",
+      "Shell(tail:*)",
+      "Shell(cd \"$COMMANDCODE_SCRATCHPAD\" # Crop full-page (1280x4683) into 6 vertical strips using sips for i in 0 1 2 3 4 5; do y=$((i * 780)) sips -c 780 1280 --cropOffset $y 0 full-page.png --out \"strip-$i.png\" >/dev/null 2>&1 && echo \"strip-$i.png cropped at y=$y\" || echo \"strip-$i FAILED\" done ls -la strip-*.png 2>/dev/null | head)",
+      "Shell(which magick convert identify 2>/dev/null; echo \"---node---\"; node --version 2>/dev/null; echo \"---check npm png libs---\"; ls \"$(npm root -g 2>/dev/null)\" 2>/dev/null | grep -iE \"png|sharp|jimp\" | head)",
+      "Shell(node sample-png.js /Users/multidots/Documents/multidots-github/landing-page-commandcode/assets/img/map.png echo  echo === hero.png (current) ===)",
+      "Shell(node sample-png.js /Users/multidots/Documents/multidots-github/landing-page-commandcode/assets/img/hero.png)",
+      "Shell(cd \"$COMMANDCODE_SCRATCHPAD\" node sample-png.js 2>/dev/null for f in /tmp/fig_extract/images/*; do echo \"=== $(basename \"$f\") ===\" node sample-png.js \"$f\" 2>&1 | grep -E \"dimensions|rgb\\(\" | head -8 echo \"\" done)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
